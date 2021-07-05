@@ -11,64 +11,63 @@ body {
 }
 
 .grid-container {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 20px;
+
+    /* // Avant Tuto : Le designer du Web // 
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "leopold7 chipote_les flagey grandmere" "c_black res_royale saison valduc_petitesoeur";
     grid-gap: 1.5rem;
-    padding: 20px 50px;
+    padding: 20px 50px;*/
+}
+
+.item {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+
+    /* // Avant Tuto : Le designer du Web // 
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;*/
+}
+
+.item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 img {
     width: 120px;
+    margin-top: 10px;
 }
 
-.leopold7 {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
+p, h3 {
+    margin: 10px;
 }
-.chipote_les {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: tomato;
 }
-.flagey {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
-}
-.grandmere {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
-}
-.c_black {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
-}
-.res_royale {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
-}
-.saison {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
-}
-.valduc_petitesoeur {
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
+
+a:hover {
+    background-color: tomato;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 4px;
+    transition: 0,3s;
 }
