@@ -49,8 +49,9 @@ body {
 }
 
 img {
-    width: 120px;
-    margin-top: 10px;
+    width: 130px;
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 p, h3 {
@@ -70,4 +71,16 @@ a:hover {
     padding: 0.3rem;
     border-radius: 4px;
     transition: 0,3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a:active {
+    background-color: firebrick;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+hr {
+    width: 60px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
